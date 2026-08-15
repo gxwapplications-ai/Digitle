@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digitle — Guess the number, every day</title>
+<meta name="description" content="Digitle is a daily number-deduction puzzle game. One secret number, six guesses, a new challenge every day.">
+<style>
+  :root {
+    --bg1: #241866;
+    --bg2: #4338CA;
+    --bg3: #8B5CF6;
+    --title: #EB4698;
+    --correct: #0FB981;
+    --present: #F69E1B;
+    --absent: #334455;
+    --text: #F4F1FF;
+    --muted: #C9C0EA;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, var(--bg1), var(--bg2) 55%, var(--bg3));
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 64px 24px 96px; }
+  header { text-align: center; margin-bottom: 12px; }
+  .title {
+    font-weight: 800;
+    font-size: 64px;
+    color: var(--title);
+    letter-spacing: -1px;
+    margin: 0;
+  }
+  .tagline {
+    font-size: 20px;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 16px auto 40px;
+    line-height: 1.5;
+  }
+  .tiles { display: flex; justify-content: center; gap: 14px; margin: 32px 0 48px; }
+  .tile {
+    width: 64px; height: 64px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 28px; color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  }
+  .tile.correct { background: var(--correct); }
+  .tile.present { background: var(--present); }
+  .cta {
+    display: inline-block;
+    background: var(--title);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 14px 32px;
+    border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(235,70,152,0.35);
+  }
+  .cta-wrap { text-align: center; margin-bottom: 72px; }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 64px;
+  }
+  .card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 18px;
+    padding: 26px;
+  }
+  .card h3 { margin: 0 0 10px; font-size: 18px; color: var(--text); }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 28px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="title">Digitle</p>
+      <p class="tagline">One secret number. Six guesses. A brand new puzzle every day — and a real leaderboard to climb.</p>
+    </header>
+
+    <div class="tiles">
+      <div class="tile correct">1</div>
+      <div class="tile present">7</div>
+      <div class="tile correct">4</div>
+    </div>
+
+    <div class="cta-wrap">
+      <!-- Update this link once the app is live on the App Store -->
+      <a class="cta" href="#">Download on the App Store</a>
+    </div>
+
+    <div class="features">
+      <div class="card">
+        <h3>A new puzzle daily</h3>
+        <p>Everyone gets the same secret number each day. Crack it in six guesses or fewer, then come back tomorrow for a new one.</p>
+      </div>
+      <div class="card">
+        <h3>Streaks &amp; stats</h3>
+        <p>Track your win streak, guess distribution, and all-time results right on your device.</p>
+      </div>
+      <div class="card">
+        <h3>Global leaderboard</h3>
+        <p>Your wins follow you across every device — see how you stack up against everyone else playing today.</p>
+      </div>
+    </div>
+
+    <footer>
+      Questions or feedback? <a href="support.html">Visit the support page</a> or email
+      <a href="mailto:dwilliams067@gmail.com">dwilliams067@gmail.com</a>.
+    </footer>
+  </div>
+</body>
+</html>
