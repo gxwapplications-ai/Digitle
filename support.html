@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digitle — Support</title>
+<meta name="description" content="Support and FAQ for Digitle, the daily number-deduction puzzle game.">
+<style>
+  :root {
+    --bg1: #241866;
+    --bg2: #4338CA;
+    --bg3: #8B5CF6;
+    --title: #EB4698;
+    --accent: #8B5CF6;
+    --text: #F4F1FF;
+    --muted: #C9C0EA;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, var(--bg1), var(--bg2) 55%, var(--bg3));
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  a.back { color: var(--muted); text-decoration: none; font-size: 14px; }
+  h1 { color: var(--title); font-size: 40px; margin: 24px 0 8px; }
+  .sub { color: var(--muted); margin-bottom: 40px; }
+  h2 { font-size: 20px; margin: 40px 0 10px; color: var(--text); }
+  p, li { color: var(--muted); line-height: 1.6; font-size: 16px; }
+  .box {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-top: 12px;
+  }
+  .contact {
+    display: inline-block;
+    margin-top: 8px;
+    background: var(--title);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 999px;
+  }
+  footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Digitle</a>
+    <h1>Support</h1>
+    <p class="sub">Help with Digitle, the daily number-deduction puzzle game.</p>
+
+    <div class="box">
+      <h2>How do I play?</h2>
+      <p>Each day has one secret number. Submit a guess and each digit is colored to give you a clue: green means that digit is correct and in the right position, amber means the digit is somewhere in the number but in a different position, and gray means it isn't in the number at all. You have six guesses to figure out the secret before a new puzzle appears the next day.</p>
+    </div>
+
+    <div class="box">
+      <h2>Why does the leaderboard say I need to be signed into iCloud?</h2>
+      <p>The leaderboard uses Apple's iCloud service to keep your score in sync across devices. Make sure you're signed into iCloud under Settings on your iPhone, then reopen Digitle and try again.</p>
+    </div>
+
+    <div class="box">
+      <h2>Can I change my leaderboard name?</h2>
+      <p>Yes — open the Stats tab and tap "Change Name." Your leaderboard entry updates the next time you win a puzzle.</p>
+    </div>
+
+    <div class="box">
+      <h2>I found a bug or have a suggestion</h2>
+      <p>Reach out any time — screenshots are always helpful if something looks wrong.</p>
+      <a class="contact" href="mailto:dwilliams067@gmail.com?subject=Digitle%20Support">Email Support</a>
+    </div>
+
+    <footer>Digitle Support · dwilliams067@gmail.com</footer>
+  </div>
+</body>
+</html>
